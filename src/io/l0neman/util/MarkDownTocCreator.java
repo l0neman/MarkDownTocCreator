@@ -4,6 +4,12 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Created by l0neman on 2020/07/07.
+ *
+ * @author l0neman
+ * @version 1.0
+ */
 public class MarkDownTocCreator {
 
   // 目录标记
@@ -19,7 +25,7 @@ public class MarkDownTocCreator {
 
   // 存放相同目录名的索引
   // 按照规则，第一个目录为原始字符串，例如“哈哈”，第二个重复名字开始依次为：“哈哈-1”，“哈哈-2”，依次类推
-  private Map<String, Integer> tocCount = new HashMap<>();
+  private final Map<String, Integer> tocCount = new HashMap<>();
 
   private String fixSpecialChar(String toc) {
     return toc.toLowerCase().replace(' ', '-').replaceAll(NOT_ALLOW_CHAR_REGEX, "");

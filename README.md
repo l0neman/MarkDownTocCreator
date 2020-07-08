@@ -29,7 +29,7 @@ java -jar MarkDownTocCreator.jar XXX.md
 
 ## 示例
 
-本人所有仓库的文档都会用这个工具生成目录，例如 [https://github.com/l0neman/program-note](https://github.com/l0neman/program-note) 仓库。
+本人所有仓库的文档都会用这个工具生成目录，例如 [https://github.com/l0neman/program-notes](https://github.com/l0neman/program-notes) 仓库。
 
 
 

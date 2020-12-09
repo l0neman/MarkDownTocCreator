@@ -10,7 +10,7 @@ import java.util.Map;
  * @author l0neman
  * @version 1.0
  */
-public class MarkDownTocCreator {
+public class MarkdownTocCreator {
 
   // 目录标记
   private static final char TOC_FLAG = '#';
@@ -105,6 +105,6 @@ public class MarkDownTocCreator {
       return;
     }
 
-    new MarkDownTocCreator().handle(args[0]);
+    new MarkdownTocCreator().handle(args[0]);
   }
 }

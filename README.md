@@ -1,4 +1,4 @@
-# MarkDownTocCreator
+# MarkdownTocCreator
 
 - [使用方法](#使用方法)
 - [实现](#实现)
@@ -13,16 +13,16 @@ GitHub Markdown TOC 生成工具。
 
 专用于生成支持 GitHib 的 README.md 文档目录。
 
-GitHub 所支持的 MarkDown 并不支持使用 `[TOC]` 标签渲染目录，那么可以借此工具生成。
+GitHub 所支持的 Markdown 并不支持使用 `[TOC]` 标签渲染目录，那么可以借此工具生成。
 
 
 
 ## 使用方法
 
-指定一个后缀为 .md 的文件，目录将被打印出来，复制到  MarkDown 文档最上方即可。
+指定一个后缀为 .md 的文件，目录将被打印出来，复制到  Markdown 文档最上方即可。
 
 ```shell
-java -jar MarkDownTocCreator.jar XXX.md
+java -jar MarkdownTocCreator.jar XXX.md
 ```
 
 
@@ -35,7 +35,7 @@ java -jar MarkDownTocCreator.jar XXX.md
 
 ## 实现
 
-1. 依据 MarkDown 语法，出现在 `#` 后面的标题将作为目录出现；
+1. 依据 Markdown 语法，出现在 `#` 后面的标题将作为目录出现；
 2. 标题 `# 你好` 的目录格式为 `- [你好](#你好)`，小括号内为标题的索引，点击可跳转到标题处；
 3. 特殊符号在标题的索引中将被替换为 `""`；空格将被替换为 `"-"`，大写字母将被替换为小写；
 4. 如果标题重复，那么第一次出现的标题索引保持不变，后续标题索引依次追加 `-1`，`-2` 依次类推。
